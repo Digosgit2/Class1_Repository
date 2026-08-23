@@ -1,6 +1,7 @@
 const { defineConfig } = require('@playwright/test');
 
 module.exports = defineConfig({
+
     testDir: './tests',
 
     use: {
@@ -14,14 +15,12 @@ module.exports = defineConfig({
                 browserName: 'chromium'
             }
         },
-
         {
             name: 'firefox',
             use: {
                 browserName: 'firefox'
             }
         },
-
         {
             name: 'webkit',
             use: {
