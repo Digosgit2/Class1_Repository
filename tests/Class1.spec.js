@@ -1,6 +1,8 @@
 const { test } =require('@playwright/test');
 
-test("TC Name", async ({page})=>{
+test("TC Name", async ({page,browserName })=>{
+
+    console.log("Running Browser:", browserName);
 
     await page.goto("https://copyright.gov.in/UserRegistration/frmNewUser.aspx");
 
